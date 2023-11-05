@@ -1,13 +1,18 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
+import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
 function App() {
-
   return (
     <>
+      <Header />
+
       <Routes>
-        <Route></Route>
+        <Route path="" ></Route>
       </Routes>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
