@@ -71,7 +71,7 @@ export function HeaderDrawer() {
   return (
     <React.Fragment>
       <div
-        className="p-5 border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white"
+        // className="p-5 border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white"
         onClick={openDrawer}
       >
         <AiOutlineMenu />
