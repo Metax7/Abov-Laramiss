@@ -26,7 +26,7 @@ export default function ThemeSwitch() {
   return (
     <>
       <button
-        className="cursor-pointer p-5 text-main-blue dark:text-main-pink duration-1000 flex justify-center items-center border-main-blue dark:border-main-pink"
+        className="cursor-pointer text-main-blue dark:text-main-pink duration-1000 flex justify-center items-center border-main-blue dark:border-main-pink"
         onClick={handleThemeSwitch}
       >
         {theme === "dark" ? (
