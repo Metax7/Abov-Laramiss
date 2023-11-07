@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full px-3 sm:px-7 bg-white dark:bg-main-bg-dark">
+      <div id="header" className="w-full px-3 sm:px-7 bg-white dark:bg-main-bg-dark">
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex bg-main-bg-gray justify-around lg:justify-between items-center px-3 py-3 font-prata lg:px-7">
             <div className="flex">
@@ -62,8 +62,8 @@ const Header = () => {
                   return (
                     <li
                       key={index}
-                      className={`p-5 border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white ${
-                        index === 2 ? "block" : "hidden lg:block"
+                      className={`border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white ${
+                        index === 2 ? "block" : "hidden lg:block p-5"
                       }`}
                     >
                       {item}

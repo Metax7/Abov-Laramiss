@@ -70,15 +70,12 @@ export function HeaderDrawer() {
 
   return (
     <React.Fragment>
-      <div
-        // className="p-5 border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white"
-        onClick={openDrawer}
-      >
+      <div className="p-5" onClick={openDrawer}>
         <AiOutlineMenu />
       </div>
       <Drawer
         open={open}
-        size={340}
+        size={400}
         onClose={closeDrawer}
         className="p-8 bg-main-bg-gray pb-32 text-white font-prata overflow-auto"
       >
@@ -187,7 +184,29 @@ export function HeaderDrawer() {
           </div>
         </div>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden space-y-10">
+          <div className="text-end">
+            <IconButton
+              variant="text"
+              onClick={closeDrawer}
+              className="text-main-yellow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={3}
+                stroke="currentColor"
+                className="h-7 w-7"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </IconButton>
+          </div>
           <ul className="text-sm font-prata font-bold space-y-4">
             {mobileDrawerList.map((item, itemIndex) => (
               <li

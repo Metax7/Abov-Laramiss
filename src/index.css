@@ -8,3 +8,7 @@
 /* * {
   @apply transition-all duration-500 ease-linear
 } */
+
+html{
+  scroll-behavior: smooth;
+}

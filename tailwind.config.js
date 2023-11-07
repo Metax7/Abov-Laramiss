@@ -19,7 +19,8 @@ export default {
         "main-bg-dark": "#1c1b19",
       },
       backgroundImage: {
-        "footer-bg": "url('../src/assets/img/pattern-01.61088593.png')" 
+        "footer-bg": "url('../src/assets/img/pattern-01.61088593.png')",
+        "home-about-pattern": "url('../src/assets/img/pattern-about.png')",
       }
     },
   },
