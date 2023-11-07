@@ -37,7 +37,7 @@ const HomeAbout = () => {
   ];
 
   return (
-    <div className="w-full bg-main-bg-dark py-16 relative">
+    <div className="w-full bg-main-bg-dark pt-16 pb-24 relative">
       <div className="max-w-screen-lg mx-auto px-7 sm:px-20 xl:px-0">
         <div className="max-lg:flex-col lg:flex items-center justify-center max-md:space-y-7 lg:space-x-10">
           <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-7 lg:w-1/2 z-50 max-lg:max-w-screen-sm mx-auto">
