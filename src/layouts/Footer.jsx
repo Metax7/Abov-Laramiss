@@ -9,6 +9,7 @@ import {
 import { FaFacebookF } from "react-icons/fa";
 import { ImDiamonds, ImLocation2 } from "react-icons/im";
 import { BsTelephone } from "react-icons/bs";
+import Header from "./Header";
 
 const Footer = () => {
   const footerList = ["Home", "About", "News", "Gallery", "Contact"];
@@ -27,14 +28,14 @@ const Footer = () => {
             <div className="lg:w-2/3">
               <div className="lg:flex justify-between items-center py-5">
                 <div className="text-white group">
-                  <Link className="flex items-center space-x-3">
+                  <a href="#header" className="flex items-center space-x-3">
                     <span className="p-3 bg-main-yellow">
                       <IoIosArrowUp />
                     </span>
                     <p className="text-md font-black group-hover:text-main-yellow transition-all duration-300">
                       BACK TO THE TOP
                     </p>
-                  </Link>
+                  </a>
                 </div>
                 <div className="lg:flex lg:space-x-2 text-[#777] mr-5">
                   <select className="bg-transparent py-4 px-16 lg:py-5 lg:px-24">
@@ -69,7 +70,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div>
-                  <ul className="max-sm:flex-col sm:flex max-sm:space-y-2 sm:space-x-1 text-sm text-white">
+                  <ul className="max-sm:flex-col sm:flex max-sm:space-y-2 sm:space-x-1 lg:space-x-3 text-sm lg:text-base text-white">
                     {footerList.map((item, index) => (
                       <li key={index} className="group">
                         <a
@@ -93,7 +94,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="bg-main-bg-gray">
-            <div className="lg:flex px-5 sm:px-10 py-10 max-md:space-y-10 items-center justify-between">
+            <div className="lg:flex px-5 sm:px-10 py-10 max-lg:space-y-10 items-center justify-between">
               <div className="max-md:flex-col md:flex max-md:space-y-5 md:space-x-20 max-md:items-center text-white">
                 <div className="flex items-center space-x-3 group">
                   <div className="text-5xl text-main-yellow">
@@ -126,7 +127,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="max-md:flex-col md:flex md:space-x-20 max-md:space-y-5">
+              <div className="max-md:flex-col md:flex md:space-x-20 max-md:space-y-10">
                 <form action="">
                   <div className="relative flex items-center w-full">
                     <div className="absolute left-0">
