@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import CardImg1 from "../../assets/img/collection-img1.jpg";
 import CardImg2 from "../../assets/img/collection-img2.jpg";
 import CardImg3 from "../../assets/img/collection-img3.jpg";
-import HomeCollectionCard from "./HomeCollectionCard";
+import HomeCollectionCard from "../../components/HomeCollectionCard";
 
 const HomeCollection = () => {
   const cards = [
