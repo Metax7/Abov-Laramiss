@@ -9,6 +9,7 @@ const HomeMainProducts = () => {
           {homeMainProducts.map((item, index) => {
             return (
               <a
+                key={index}
                 className="group relative overflow-hidden p-5 border-2 border-[#40403b] space-y-3 hover:bg-main-bg-dark hover:border-main-bg-dark transition-all duration-300"
                 href="#"
               >

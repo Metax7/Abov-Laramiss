@@ -21,7 +21,11 @@ export default {
       backgroundImage: {
         "footer-bg": "url('../src/assets/img/pattern-01.61088593.png')",
         "home-about-pattern": "url('../src/assets/img/pattern-about.png')",
-      }
+        "menu-gallery-1": "url('../src/assets/img/menu-gallery-1.jpg')",
+        "menu-gallery-2": "url('../src/assets/img/menu-gallery-2.jpg')",
+        "menu-gallery-3": "url('../src/assets/img/menu-gallery-3.jpg')",
+        "menu-gallery-4": "url('../src/assets/img/menu-gallery-4.jpg')",
+      },
     },
   },
   plugins: [],

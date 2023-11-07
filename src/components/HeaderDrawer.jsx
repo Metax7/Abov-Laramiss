@@ -237,10 +237,11 @@ export function HeaderDrawer() {
                   >
                     {item.subItems.map((subItem, subItemIndex) => (
                       <Link
+                        key={subItemIndex}
                         className="hover:text-white hover:bg-main-yellow block px-6 py-3 transition-all duration-300"
                         href="#"
                       >
-                        <li key={subItemIndex}>{subItem}</li>
+                        <li>{subItem}</li>
                       </Link>
                     ))}
                   </ul>
