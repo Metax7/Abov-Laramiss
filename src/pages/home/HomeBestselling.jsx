@@ -6,7 +6,7 @@ const HomeBestselling = () => {
   return (
     <div className="w-full bg-main-bg-dark py-32 px-7 overflow-hidden relative">
       <img
-        className="absolute bottom-[-250px] left-[-220px] hidden lg:block"
+        className="absolute bottom-0 left-[-220px] hidden lg:block"
         src={TextureRing}
         alt=""
       />
