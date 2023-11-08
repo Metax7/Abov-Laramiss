@@ -1,0 +1,41 @@
+export const ProductCardData = [
+  {
+    id: 1,
+    image: "src/assets/img/turtle.jpg",
+    name: "Ankle Bracelet",
+    cost: 500,
+    sale: true,
+    discount: 20,
+  },
+  {
+    id: 2,
+    image: "src/assets/img/ring.jpg",
+    name: "Stud Earrings",
+    cost: 290,
+    sale: false,
+  },
+  {
+    id: 3,
+    image: "src/assets/img/earring.jpg",
+    name: "Crumpled Ring",
+    cost: 450,
+    sale: true,
+    discount: 10,
+  },
+  {
+    id: 4,
+    image: "src/assets/img/necklace.jpg",
+    name: "Moon Necklace",
+    cost: 500,
+    sale: true,
+    discount: 15,
+  },
+  {
+    id: 5,
+    image: "src/assets/img/earring.jpg",
+    name: "Crumpled Ring",
+    cost: 450,
+    sale: true,
+    discount: 10,
+  },
+];
