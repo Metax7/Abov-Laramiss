@@ -143,7 +143,7 @@ const Footer = () => {
                   </div>
                 </form>
                 <div>
-                  <div className="lg:flex lg:items-center lg:space-x-3 text-white group">
+                  <div className="flex items-center lg:space-x-3 text-white group">
                     <a
                       className="lg:flex-col lg:items-center group-hover:text-main-yellow transition-all duration-200"
                       href=""
