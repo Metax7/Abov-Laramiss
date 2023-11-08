@@ -16,7 +16,7 @@ const HomeGalleryCard = (props) => {
         </div>
         <div className="absolute top-[40%] flex invisible opacity-0 flex-col items-center text-white group-hover:visible group-hover:opacity-100 z-30 transition-all duration-500 ease-linear space-y-3">
           <h4 className="font-bold text-2xl font-prata">{props.hiddenTitle}</h4>
-          <p className="text-sm font-medium">{props.hiddenDesc}</p>
+          <p className="text-sm font-medium text-center px-5 md:px-0">{props.hiddenDesc}</p>
           <a className="flex items-center font-medium" href="#">
             <span className="mr-3">
               <BsArrowRight />
