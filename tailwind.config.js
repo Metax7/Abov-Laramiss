@@ -25,6 +25,7 @@ export default {
         "menu-gallery-2": "url('../src/assets/img/menu-gallery-2.jpg')",
         "menu-gallery-3": "url('../src/assets/img/menu-gallery-3.jpg')",
         "menu-gallery-4": "url('../src/assets/img/menu-gallery-4.jpg')",
+        "rare": "url('../src/assets/img/rare.png')",
       },
     },
   },

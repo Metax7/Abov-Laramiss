@@ -136,7 +136,7 @@ const Footer = () => {
                       </button>
                     </div>
                     <input
-                      className="py-3 px-8 bg-transparent outline-none border-b border-gray-500 focus.border-b-2 focus.border-white transition-all duration-200"
+                      className="py-3 px-8 bg-transparent outline-none border-b border-gray-500 focus:border-b-2 focus:border-white transition-all duration-200"
                       type="text"
                       placeholder="Search..."
                     />
@@ -163,9 +163,9 @@ const Footer = () => {
           </div>
           <div className="max-md:flex-col md:flex max-md:space-y-5 justify-between bg-main-bg-gray px-10 py-10">
             <div className="font-bold text-[#777]">
-              Copyright By@{" "}
+              Copyright By@
               <a className="text-white border-b-2 border-white" href="">
-                Example{" "}
+                Example
               </a>
               - 2022
             </div>
