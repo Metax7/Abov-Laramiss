@@ -3,6 +3,7 @@ import HomeMain from "./HomeMain";
 import HomeAbout from "./HomeAbout";
 import HomeCollection from "./HomeCollection";
 import HomeMenuGallery from "./HomeMenuGallery";
+import HomeRareCollections from "./HomeRareCollections";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeAbout />
       <HomeCollection />
       <HomeMenuGallery />
+      <HomeRareCollections />
     </>
   );
 };
