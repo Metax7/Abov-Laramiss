@@ -11,13 +11,13 @@ const HomeCollectionCard = (props) => {
             alt=""
           />
         </div>
-        <d
+        <div
           className={`${props.cardBodyStyle} text-center flex flex-col p-5 items-center justify-center space-y-3`}
         >
           <h1 className={`${props.titleStyle}`}>{props.title}</h1>
           <p className={`${props.subtitleStyle}`}>{props.subtitle}</p>
           <p className={`${props.descStyle}`}>{props.desc}</p>
-        </d>
+        </div>
       </a>
     </>
   );
