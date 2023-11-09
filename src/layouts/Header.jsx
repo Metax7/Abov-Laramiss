@@ -63,7 +63,7 @@ const Header = () => {
                     <li
                       key={index}
                       className={`border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white ${
-                        index === 2 ? "block" : "hidden lg:block p-5"
+                        index === 2 || index === 4 ? "block" : "hidden lg:block p-5"
                       }`}
                     >
                       {item}
