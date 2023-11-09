@@ -23,47 +23,31 @@ const HomeCategories = () => {
       label: "RINGS",
       icon: <GiBigDiamondRing />,
       value: "rings",
-      desc: `It really matters and then like it really doesn't matter.
-      What matters is the people who are sparked by it. And the people 
-      who are like offended by it, it doesn't matter.`,
     },
     {
       label: "EARRINGS",
       icon: <GiDropEarrings />,
       value: "earrings",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
     },
     {
       label: "NECKLACES",
       icon: <GiNecklaceDisplay />,
       value: "necklaces",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
     },
     {
       label: "BRACELETS",
       icon: <GiGemPendant />,
       value: "bracelets",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
     },
     {
       label: "ARMLETS",
       icon: <GiFeatherNecklace />,
       value: "armlets",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
     },
     {
       label: "ANKLETS",
       icon: <GiNecklace />,
       value: "anklets",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
     },
   ];
 
@@ -73,7 +57,9 @@ const HomeCategories = () => {
         <div className="max-w-screen-lg mx-auto space-y-10">
           <div className="space-y-7">
             <span className="font-bold font-rubik text-[#777]">CATEGORIES</span>
-            <h1 className="text-white font-prata text-4xl sm:text-7xl">Our Categories</h1>
+            <h1 className="text-white font-prata text-4xl sm:text-7xl">
+              Our Categories
+            </h1>
           </div>
           <div>
             <Tabs value="rings" className="">
@@ -96,7 +82,7 @@ const HomeCategories = () => {
                 ))}
               </TabsHeader>
               <TabsBody>
-                {data.map(({ value, desc }) => (
+                {data.map(({ value }) => (
                   <TabPanel
                     className="flex flex-wrap items-center justify-center max-sm:space-y-5 sm:space-x-5"
                     key={value}
