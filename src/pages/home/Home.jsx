@@ -7,6 +7,7 @@ import HomeRareCollections from "./HomeRareCollections";
 import HomeBestselling from "./HomeBestselling";
 import HomeCategories from "./HomeCategories";
 import HomeNewCollection from "./HomeNewCollection";
+import HomeOurProducts from "./HomeOurProducts";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <HomeBestselling />
       <HomeCategories />
       <HomeNewCollection />
+      <HomeOurProducts />
     </>
   );
 };
