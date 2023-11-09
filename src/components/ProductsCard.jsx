@@ -5,7 +5,7 @@ import { BiRefresh } from "react-icons/bi";
 const ProductsCard = (props) => {
   return (
     <>
-      <div className="flex justify-center space-x-5">
+      <div className="flex justify-center ml-3 lg:ml-0">
         <div className="flex flex-col group">
           <div className="relative overflow-hidden">
             <img

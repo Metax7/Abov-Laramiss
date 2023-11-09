@@ -19,7 +19,7 @@ const HomeBestselling = () => {
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat you have to understand this."
             button="SHOP NOW"
           />
-          <div className="lg:w-full ">
+          <div className="lg:w-full">
             <ProductsSlider />
           </div>
         </div>

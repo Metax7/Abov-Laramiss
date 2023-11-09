@@ -20,7 +20,6 @@ const ProductsSlider = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -45,14 +44,9 @@ const ProductsSlider = () => {
     <>
       <Slider {...settings}>
         {ProductCardData.map((item, index) => (
-          <div className="" key={index}>
+          <div key={index}>
             <ProductsCard
-              item={item}
-              image={item.image}
-              name={item.name}
-              cost={item.cost}
-              sale={item.sale}
-              discount={item.discount}
+              {...item}
             />
           </div>
         ))}
