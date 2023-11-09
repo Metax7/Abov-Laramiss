@@ -8,6 +8,7 @@ import HomeBestselling from "./HomeBestselling";
 import HomeCategories from "./HomeCategories";
 import HomeNewCollection from "./HomeNewCollection";
 import HomeOurProducts from "./HomeOurProducts";
+import HomeOnSaleProducts from "./HomeOnSaleProducts";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <HomeCategories />
       <HomeNewCollection />
       <HomeOurProducts />
+      <HomeOnSaleProducts />
     </>
   );
 };
