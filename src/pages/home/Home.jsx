@@ -10,6 +10,7 @@ import HomeNewCollection from "./HomeNewCollection";
 import HomeOurProducts from "./HomeOurProducts";
 import HomeOnSaleProducts from "./HomeOnSaleProducts";
 import HomeCounter from "./HomeCounter";
+import HomeSpecial from "./HomeSpecial";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <HomeOurProducts />
       <HomeOnSaleProducts />
       <HomeCounter />
+      <HomeSpecial />
     </>
   );
 };
