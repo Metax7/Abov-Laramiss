@@ -14,7 +14,7 @@ const HomeSpecialCard = ({ image, title, desc }) => {
               {title}
             </a>
           </h3>
-          <p className="text-[#a3a3a3] text-sm font-rubik sm:pr-32">{desc}</p>
+          <p className="text-[#a3a3a3] text-sm font-rubik pr-16 md:pr-28 lg:pr-32">{desc}</p>
         </div>
         <a
           href="#"
