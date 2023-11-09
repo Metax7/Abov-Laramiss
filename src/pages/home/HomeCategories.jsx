@@ -11,7 +11,11 @@ import {
   GiDropEarrings,
   GiNecklaceDisplay,
   GiGemPendant,
+  GiFeatherNecklace,
+  GiNecklace,
 } from "react-icons/gi";
+import { ProductCardData } from "../../data/ProductsCardData";
+import ProductsCard from "../../components/ProductsCard";
 
 const HomeCategories = () => {
   const data = [
@@ -47,7 +51,7 @@ const HomeCategories = () => {
     },
     {
       label: "ARMLETS",
-      icon: <GiBigDiamondRing />,
+      icon: <GiFeatherNecklace />,
       value: "armlets",
       desc: `We're not always in the position that we want to be at.
       We're constantly growing. We're constantly making mistakes. We're
@@ -55,7 +59,7 @@ const HomeCategories = () => {
     },
     {
       label: "ANKLETS",
-      icon: <GiBigDiamondRing />,
+      icon: <GiNecklace />,
       value: "anklets",
       desc: `We're not always in the position that we want to be at.
       We're constantly growing. We're constantly making mistakes. We're
@@ -65,16 +69,16 @@ const HomeCategories = () => {
 
   return (
     <>
-      <div className="w-full bg-main-bg-dark py-16">
-        <div className="max-w-screen-lg mx-auto space-y-5">
+      <div className="w-full bg-main-bg-dark px-7 py-16">
+        <div className="max-w-screen-lg mx-auto space-y-10">
           <div className="space-y-7">
             <span className="font-bold font-rubik text-[#777]">CATEGORIES</span>
-            <h1 className="text-white font-prata text-7xl">Our Categories</h1>
+            <h1 className="text-white font-prata text-4xl sm:text-7xl">Our Categories</h1>
           </div>
           <div>
             <Tabs value="rings" className="">
               <TabsHeader
-                className="bg-transparent space-x-6"
+                className="bg-transparent grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5 md:gap-10 lg:gap-5"
                 indicatorProps={{
                   className:
                     "bg-main-yellow shadow-none !text-gray-900 rounded-none",
@@ -82,7 +86,7 @@ const HomeCategories = () => {
               >
                 {data.map(({ label, value, icon }) => (
                   <Tab
-                    className=" text-white py-7 bg-main-bg-gray font-bold"
+                    className="text-white py-7 bg-main-bg-gray font-bold"
                     key={value}
                     value={value}
                   >
@@ -93,8 +97,23 @@ const HomeCategories = () => {
               </TabsHeader>
               <TabsBody>
                 {data.map(({ value, desc }) => (
-                  <TabPanel key={value} value={value}>
-                    {desc}
+                  <TabPanel
+                    className="flex flex-wrap items-center justify-center max-sm:space-y-5 sm:space-x-5"
+                    key={value}
+                    value={value}
+                  >
+                    {ProductCardData.filter(
+                      (product) => product.category === value
+                    ).map((product) => (
+                      <ProductsCard
+                        key={product.id}
+                        image={product.image}
+                        name={product.name}
+                        cost={product.cost}
+                        sale={product.sale}
+                        discount={product.discount}
+                      />
+                    ))}
                   </TabPanel>
                 ))}
               </TabsBody>

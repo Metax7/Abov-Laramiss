@@ -50,7 +50,7 @@ const ProductsCard = (props) => {
           </div>
           <div className="p-7 bg-main-bg-gray">
             <h4 className="font-prata text-white text-xl">{props.name}</h4>
-            <div className="flex propss-center justify-between">
+            <div className="flex items-center justify-between">
               <span className="font-bold text-main-yellow text-lg font-rubik">
                 {props.sale ? (
                   <div className="text-main-yellow">
