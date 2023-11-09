@@ -42,16 +42,7 @@ const HomeMenuGallery = () => {
       <div className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((card, index) => {
-            return (
-              <HomeGalleryCard
-                key={index}
-                title={card.title}
-                hiddenTitle={card.hiddenTitle}
-                hiddenDesc={card.hiddenDesc}
-                cost={card.cost}
-                bgStyle={card.bgStyle}
-              />
-            );
+            return <HomeGalleryCard key={index} {...card} />;
           })}
         </div>
       </div>

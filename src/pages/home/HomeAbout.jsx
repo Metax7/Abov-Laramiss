@@ -45,12 +45,7 @@ const HomeAbout = () => {
               return (
                 <HomeAboutCard
                   key={index}
-                  title={item.title}
-                  description={item.description}
-                  icon={item.icon}
-                  image={item.image}
-                  showText={item.showText}
-                  showImage={item.showImage}
+                  {...item}
                   isLower={index === 1 || index === 3}
                 />
               );

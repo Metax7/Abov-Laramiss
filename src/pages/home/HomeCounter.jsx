@@ -35,17 +35,12 @@ const HomeCounter = () => {
     <>
       <div className="w-full bg-main-bg-dark px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto">
-          <div id="counter-section" className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div
+            id="counter-section"
+            className="grid grid-cols-2 md:grid-cols-4 gap-5"
+          >
             {counterData.map((item, index) => {
-              return (
-                <HomeCounterCard
-                  key={index}
-                  icon={item.icon}
-                  count={item.count}
-                  countMK={item.countMK}
-                  desc={item.desc}
-                />
-              );
+              return <HomeCounterCard key={index} {...item} />;
             })}
           </div>
         </div>

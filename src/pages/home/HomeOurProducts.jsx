@@ -13,16 +13,7 @@ const HomeOurProducts = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {ProductCardData.filter((item) => item.id <= 4).map((item) => {
-              return (
-                <ProductsCard
-                  key={item.id}
-                  image={item.image}
-                  name={item.name}
-                  cost={item.cost}
-                  sale={item.sale}
-                  discount={item.discount}
-                />
-              );
+              return <ProductsCard key={item.id} {...item} />;
             })}
           </div>
         </div>
