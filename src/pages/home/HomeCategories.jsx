@@ -53,7 +53,7 @@ const HomeCategories = () => {
 
   return (
     <>
-      <div className="w-full bg-main-bg-dark px-7 py-16">
+      <div className="w-full bg-main-bg-dark px-7 sm:px-20 xl:px-0 py-16">
         <div className="max-w-screen-lg mx-auto space-y-10">
           <div className="space-y-7">
             <span className="font-bold font-rubik text-[#777]">CATEGORIES</span>

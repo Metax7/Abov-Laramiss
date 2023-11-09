@@ -6,6 +6,7 @@ import HomeMenuGallery from "./HomeMenuGallery";
 import HomeRareCollections from "./HomeRareCollections";
 import HomeBestselling from "./HomeBestselling";
 import HomeCategories from "./HomeCategories";
+import HomeNewCollection from "./HomeNewCollection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeRareCollections />
       <HomeBestselling />
       <HomeCategories />
+      <HomeNewCollection />
     </>
   );
 };
