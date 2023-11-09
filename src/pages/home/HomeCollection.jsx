@@ -63,14 +63,7 @@ const HomeCollection = () => {
               {cards.map((item, index) => {
                 return (
                   <HomeCollectionCard
-                    key={index}
-                    image={item.image}
-                    title={item.title}
-                    subtitle={item.subtitle}
-                    desc={item.desc}
-                    titleStyle={item.titleStyle}
-                    subtitleStyle={item.subtitleStyle}
-                    descStyle={item.descStyle}
+                    {...item}
                   />
                 );
               })}
