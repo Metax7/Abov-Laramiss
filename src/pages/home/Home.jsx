@@ -9,6 +9,7 @@ import HomeCategories from "./HomeCategories";
 import HomeNewCollection from "./HomeNewCollection";
 import HomeOurProducts from "./HomeOurProducts";
 import HomeOnSaleProducts from "./HomeOnSaleProducts";
+import HomeCounter from "./HomeCounter";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <HomeNewCollection />
       <HomeOurProducts />
       <HomeOnSaleProducts />
+      <HomeCounter />
     </>
   );
 };
