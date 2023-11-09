@@ -37,7 +37,7 @@ const HomeSpecial = () => {
             </div>
             <div className="flex flex-col space-y-5 lg:w-1/2">
               {specialCardData.slice(1).map((item, index) => {
-                return <HomeSpecialCard {...item} />;
+                return <HomeSpecialCard key={index} {...item} />;
               })}
             </div>
           </div>

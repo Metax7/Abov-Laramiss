@@ -53,19 +53,7 @@ const HomeNewCollection = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cardData.map((item, index) => {
-              return (
-                <HomeCollectionCard
-                  key={index}
-                  image={item.image}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  desc={item.desc}
-                  titleStyle={item.titleStyle}
-                  subtitleStyle={item.subtitleStyle}
-                  descStyle={item.descStyle}
-                  cardBodyStyle={item.cardBodyStyle}
-                />
-              );
+              return <HomeCollectionCard key={index} {...item} />;
             })}
           </div>
         </div>

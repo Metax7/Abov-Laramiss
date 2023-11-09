@@ -91,14 +91,7 @@ const HomeCategories = () => {
                     {ProductCardData.filter(
                       (product) => product.category === value
                     ).map((product) => (
-                      <ProductsCard
-                        key={product.id}
-                        image={product.image}
-                        name={product.name}
-                        cost={product.cost}
-                        sale={product.sale}
-                        discount={product.discount}
-                      />
+                      <ProductsCard key={product.id} {...product} />
                     ))}
                   </TabPanel>
                 ))}
