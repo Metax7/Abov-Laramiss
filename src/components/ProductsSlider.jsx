@@ -45,9 +45,7 @@ const ProductsSlider = () => {
       <Slider {...settings}>
         {ProductCardData.map((item, index) => (
           <div key={index}>
-            <ProductsCard
-              {...item}
-            />
+            <ProductsCard {...item} />
           </div>
         ))}
       </Slider>
