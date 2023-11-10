@@ -9,6 +9,46 @@
   @apply transition-all duration-500 ease-linear
 } */
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+.popup-video:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1s linear infinite;
+  animation: pulse-border 1s linear infinite;
+}
+
+.popup-video::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1.5s linear infinite;
+  animation: pulse-border 1.5s linear infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
