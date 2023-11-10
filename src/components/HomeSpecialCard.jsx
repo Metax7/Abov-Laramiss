@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const HomeSpecialCard = ({ image, title, desc }) => {
+const HomeSpecialCard = ({ image, title, desc, refStyle, titleStyle, descStyle }) => {
   return (
     <>
       <div className="relative group overflow-hidden after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(36,39,42,0.47)]">
@@ -10,15 +10,22 @@ const HomeSpecialCard = ({ image, title, desc }) => {
         ></div>
         <div className="absolute left-8 bottom-8 z-20 right-8">
           <h3>
-            <a className="text-white text-3xl font-prata" href="">
+            <a
+              className={`${titleStyle} text-white text-3xl font-prata transition-all duration-300`}
+              href="#"
+            >
               {title}
             </a>
           </h3>
-          <p className="text-[#a3a3a3] text-sm font-rubik pr-16 md:pr-28 lg:pr-32">{desc}</p>
+          <a
+            href="#" className={`${descStyle} block text-[#a3a3a3] text-sm font-rubik pr-16 md:pr-28 lg:pr-32 transition-all duration-300`}
+          >
+            {desc}
+          </a>
         </div>
         <a
           href="#"
-          className="border-2 border-[#ffffff33] text-white z-20 p-5 absolute right-8 bottom-8 rounded-full text-lg text-center translate-y-28 invisible opacity-0 hover:bg-main-bg-dark group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-500"
+          className={`${refStyle} border-2 border-[#ffffff33] text-white z-20 p-5 absolute right-8 bottom-8 rounded-full text-lg text-center translate-y-28 invisible opacity-0 hover:bg-main-bg-dark group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-500`}
         >
           <AiOutlineArrowRight />
         </a>

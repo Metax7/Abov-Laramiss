@@ -13,6 +13,7 @@ import HomeCounter from "./HomeCounter";
 import HomeSpecial from "./HomeSpecial";
 import HomeVideoSection from "./HomeVideoSection";
 import HomeShopSection from "./HomeShopSection";
+import HomeBlogSection from "./HomeBlogSection";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <HomeSpecial />
       <HomeVideoSection />
       <HomeShopSection />
+      <HomeBlogSection />
     </>
   );
 };
