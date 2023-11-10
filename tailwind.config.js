@@ -29,6 +29,8 @@ export default {
         "special-face": "url('../src/assets/img/special-face.jpg')",
         "special-ring": "url('../src/assets/img/special-ring.jpg')",
         "special-necklace": "url('../src/assets/img/special-necklace.jpg')",
+        "video-pattern": "url('../src/assets/img/video-pattern.png')",
+        "video-bg": "url('../src/assets/img/video-bg.jpg')",
       },
     },
   },

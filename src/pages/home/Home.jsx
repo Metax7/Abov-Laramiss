@@ -11,6 +11,7 @@ import HomeOurProducts from "./HomeOurProducts";
 import HomeOnSaleProducts from "./HomeOnSaleProducts";
 import HomeCounter from "./HomeCounter";
 import HomeSpecial from "./HomeSpecial";
+import HomeVideoSection from "./HomeVideoSection";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <HomeOnSaleProducts />
       <HomeCounter />
       <HomeSpecial />
+      <HomeVideoSection />
     </>
   );
 };
