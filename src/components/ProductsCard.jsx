@@ -48,7 +48,7 @@ const ProductsCard = (props) => {
               </a>
             </div>
           </div>
-          <div className="p-7 bg-main-bg-gray">
+          <div className="p-7 bg-main-bg-gray" style={props.productStyle}>
             <h4 className="font-prata text-white text-xl">{props.name}</h4>
             <div className="flex items-center justify-between">
               <span className="font-bold text-main-yellow text-lg font-rubik">
