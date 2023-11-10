@@ -13,34 +13,34 @@ const BlogSwiperSlider = ({ setSwiper }) => {
     {
       image: "bg-blog-1 py-60",
       title: "Ruby on Rose Accessories and Blue Gemstones.",
-      desc: "Read More",
+      desc: "Read More ->",
       refStyle: "hidden",
       titleStyle: "hover:text-main-yellow",
-      descStyle: "text-white mt-5 hover:text-main-yellow"
+      descStyle: "text-white mt-5 hover:text-main-yellow",
     },
     {
       image: "bg-blog-2 py-60",
       title: "Matching Jewellery Sets with your Outwear.",
-      desc: "Read More",
+      desc: "Read More ->",
       refStyle: "hidden",
       titleStyle: "hover:text-main-yellow",
-      descStyle: "text-white mt-5 hover:text-main-yellow"
+      descStyle: "text-white mt-5 hover:text-main-yellow",
     },
     {
       image: "bg-blog-3 py-60",
       title: "New Retro Collection of Pendants and Ring sets.",
-      desc: "Read More",
+      desc: "Read More ->",
       refStyle: "hidden",
       titleStyle: "hover:text-main-yellow",
-      descStyle: "text-white mt-5 hover:text-main-yellow"
+      descStyle: "text-white mt-5 hover:text-main-yellow",
     },
     {
       image: "bg-blog-4 py-60",
       title: "Special Wedding Rings Sets for Him and for Her.",
-      desc: "Read More",
+      desc: "Read More ->",
       refStyle: "hidden",
       titleStyle: "hover:text-main-yellow",
-      descStyle: "text-white mt-5 hover:text-main-yellow"
+      descStyle: "text-white mt-5 hover:text-main-yellow",
     },
   ];
 

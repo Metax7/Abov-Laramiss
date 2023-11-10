@@ -1,7 +1,14 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const HomeSpecialCard = ({ image, title, desc, refStyle, titleStyle, descStyle }) => {
+const HomeSpecialCard = ({
+  image,
+  title,
+  desc,
+  refStyle,
+  titleStyle,
+  descStyle,
+}) => {
   return (
     <>
       <div className="relative group overflow-hidden after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[rgba(36,39,42,0.47)]">
@@ -18,7 +25,8 @@ const HomeSpecialCard = ({ image, title, desc, refStyle, titleStyle, descStyle }
             </a>
           </h3>
           <a
-            href="#" className={`${descStyle} block text-[#a3a3a3] text-sm font-rubik pr-16 md:pr-28 lg:pr-32 transition-all duration-300`}
+            href="#"
+            className={`${descStyle} block text-[#a3a3a3] text-sm font-rubik pr-16 md:pr-28 lg:pr-32 transition-all duration-300`}
           >
             {desc}
           </a>
