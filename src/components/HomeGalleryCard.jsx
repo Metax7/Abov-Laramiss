@@ -27,7 +27,7 @@ const HomeGalleryCard = (props) => {
           </a>
         </div>
         <a
-          className="absolute z-30 bottom-10 py-3 px-5 border-2 border-main-bg-gray group-hover:border-white hover:bg-main-yellow hover:shadow-[0_14px_24px_0_rgba(190,173,142,.4)] font-bold font-rubik text-white transition-all duration-300"
+          className="absolute z-30 bottom-10 py-3 px-5 border-2 border-main-gray group-hover:border-white hover:bg-main-yellow hover:shadow-[0_14px_24px_0_rgba(190,173,142,.4)] font-bold font-rubik text-white transition-all duration-300"
           href="#"
         >
           STARTING AT <span>{props.cost}</span>

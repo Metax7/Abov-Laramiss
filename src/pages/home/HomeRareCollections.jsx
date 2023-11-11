@@ -3,7 +3,7 @@ import HomeBlockText from "../../components/HomeBlockText";
 
 const HomeRareCollections = () => {
   return (
-    <div className="w-full bg-main-bg-dark py-28 bg-rare bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[#353530] after:-z-10 after:opacity-60">
+    <div className="w-full py-28 bg-rare bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-main-light-choco dark:after:bg-main-gray after:-z-10 after:opacity-60">
       <div className="max-w-screen-lg mx-auto px-7 sm:px-20 xl:px-0">
         <HomeBlockText
           title="Rare Collections."

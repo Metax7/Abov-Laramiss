@@ -29,26 +29,26 @@ const ProductsCard = (props) => {
             </div>
             <div className="absolute text-lg top-[10px] right-[10px] space-y-1">
               <a
-                className="block p-3 bg-main-bg-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
+                className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
                 href="#"
               >
                 <AiOutlineHeart />
               </a>
               <a
-                className="block p-3 bg-main-bg-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
+                className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
                 href="#"
               >
                 <BiRefresh />
               </a>
               <a
-                className="block p-3 bg-main-bg-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
+                className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
                 href="#"
               >
                 <AiFillEye />
               </a>
             </div>
           </div>
-          <div className="p-7 bg-main-bg-gray" style={props.productStyle}>
+          <div className="p-7 bg-main-gray" style={props.productStyle}>
             <h4 className="font-prata text-white text-xl">{props.name}</h4>
             <div className="flex items-center justify-between">
               <span className="font-bold text-main-yellow text-lg font-rubik">

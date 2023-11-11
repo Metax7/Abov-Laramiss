@@ -5,7 +5,7 @@ import HomeBlockText from "../../components/HomeBlockText";
 
 const HomeBestselling = () => {
   return (
-    <div className="w-full bg-main-bg-dark py-32 px-7 overflow-hidden relative">
+    <div className="w-full bg-main-light dark:bg-main-dark py-32 px-7 overflow-hidden relative">
       <img
         className="absolute bottom-0 left-[-220px] hidden xl:block"
         src={TextureRing}
@@ -18,6 +18,7 @@ const HomeBestselling = () => {
             subTitle="BUY NOW"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat you have to understand this."
             button="SHOP NOW"
+            descStyle="text-main-light-dark-choco dark:text-white"
           />
           <div className="lg:w-full">
             <ProductsSlider />

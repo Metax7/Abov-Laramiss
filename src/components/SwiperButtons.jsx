@@ -7,7 +7,7 @@ const SwiperButtons = ({ swiper, prevBtnStyle }) => {
       <div className="relative flex space-x-5">
         <button
           onClick={() => swiper.slidePrev()}
-          className={`${prevBtnStyle} p-6 text-2xl text-white transition-all duration-300`}
+          className={`${prevBtnStyle} dark:bg-main-dark p-6 text-2xl text-white transition-all duration-300`}
         >
           <AiOutlineArrowLeft />
         </button>

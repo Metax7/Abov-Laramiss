@@ -76,8 +76,9 @@ export function HeaderDrawer() {
       <Drawer
         open={open}
         size={400}
+        overlay={true}
         onClose={closeDrawer}
-        className="p-8 bg-main-bg-gray pb-32 text-white font-prata overflow-auto"
+        className="p-8 bg-main-light-choco dark:bg-main-gray pb-32 text-white font-prata overflow-auto"
       >
         <div className="space-y-10 max-lg:hidden">
           <div className="space-y-5">
@@ -108,7 +109,7 @@ export function HeaderDrawer() {
             </h5>
             <form className="flex items-center" action="">
               <input
-                className="bg-main-bg-dark font-sans px-7 py-4 w-full text-white outline-none"
+                className="bg-main-light-dark-choco dark:bg-main-dark font-sans px-7 py-4 w-full text-white outline-none"
                 type="text"
                 placeholder="Search your keyword..."
               />
@@ -124,7 +125,7 @@ export function HeaderDrawer() {
             <h5 className="text-xl pl-5 border-l-2 border-main-yellow">
               About us
             </h5>
-            <p className="text-sm text-[#777] font-rubik">
+            <p className="text-sm text-main-light-dark-choco font-medium dark:text-[#777] font-rubik">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
               repellendus explicabo voluptas possimus blanditiis earum illo
               incidunt cupiditate, distinctio mollitia nostrum molestias
@@ -136,7 +137,7 @@ export function HeaderDrawer() {
             <h5 className="text-xl pl-5 border-l-2 border-main-yellow">
               Our Pages
             </h5>
-            <ul className="text-[#777] font-rubik font-bold space-y-1">
+            <ul className="text-main-light-dark-choco dark:text-[#777] font-rubik font-bold space-y-1">
               {drawerList.map((item, itemIndex) => (
                 <li key={itemIndex}>
                   <Link

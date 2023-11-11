@@ -39,7 +39,7 @@ const ProductSwiperSlider = ({ setSwiper, productStyle }) => {
             },
           }}
           modules={[Navigation, Pagination, Autoplay]}
-          onSlideChange={() => console.log("slide change")}
+          // onSlideChange={() => console.log("slide change")}
           onSwiper={handleSwiper}
         >
           {ProductCardData.map((item, index) => (
