@@ -15,8 +15,11 @@ export default {
       },
       colors: {
         "main-yellow": "#fcd462",
-        "main-bg-gray": "#353530",
-        "main-bg-dark": "#1c1b19",
+        "main-gray": "#353530",
+        "main-dark": "#1c1b19",
+        "main-light": "#f3e9dc",
+        "main-light-choco": "#c7ad98",
+        "main-light-dark-choco": "#382315",
       },
       backgroundImage: {
         "footer-bg": "url('../src/assets/img/pattern-01.61088593.png')",

@@ -53,10 +53,10 @@ const HomeCategories = () => {
 
   return (
     <>
-      <div className="w-full bg-main-bg-dark px-7 sm:px-20 xl:px-0 py-16">
+      <div className="w-full bg-main-light-choco dark:bg-main-dark px-7 sm:px-20 xl:px-0 py-16">
         <div className="max-w-screen-lg mx-auto space-y-10">
           <div className="space-y-7">
-            <span className="font-bold font-rubik text-[#777]">CATEGORIES</span>
+            <span className="font-bold font-rubik text-white dark:text-[#777]">CATEGORIES</span>
             <h1 className="text-white font-prata text-4xl sm:text-7xl">
               Our Categories
             </h1>
@@ -72,7 +72,7 @@ const HomeCategories = () => {
               >
                 {data.map(({ label, value, icon }) => (
                   <Tab
-                    className="text-white py-7 bg-main-bg-gray font-bold"
+                    className="text-main-light-dark-choco dark:text-white py-7 bg-main-light dark:bg-main-gray font-bold"
                     key={value}
                     value={value}
                   >

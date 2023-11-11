@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full py-16 bg-main-bg-dark bg-footer-bg">
+      <div className="w-full py-16 bg-main-light dark:bg-main-dark dark:bg-footer-bg">
         <div className="max-w-screen-2xl px-3 sm:px-7 2xl:px-0 mx-auto">
           <div className="lg:flex">
             <div className="lg:w-2/3">
@@ -32,7 +32,7 @@ const Footer = () => {
                     <span className="p-3 bg-main-yellow">
                       <IoIosArrowUp />
                     </span>
-                    <p className="text-md font-black group-hover:text-main-yellow transition-all duration-300">
+                    <p className="text-md font-black text-main-light-dark-choco dark:text-white group-hover:text-main-yellow transition-all duration-300">
                       BACK TO THE TOP
                     </p>
                   </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                   </select>
                 </div>
               </div>
-              <div className="flex-col py-10 px-5 bg-main-bg-gray space-y-10">
+              <div className="flex-col py-10 px-5 bg-main-light-choco dark:bg-main-gray space-y-10">
                 <div className="flex flex-wrap justify-between items-center">
                   <div>
                     <img className="" src={FooterLogo} alt="" />
@@ -59,7 +59,7 @@ const Footer = () => {
                       {footerSocialList.map((item, index) => (
                         <li key={index}>
                           <a
-                            className="block bg-[#2e2e2e] p-2 text-white hover:bg-main-yellow transition-all duration-200"
+                            className="block bg-main-dark p-2 text-white hover:bg-main-yellow transition-all duration-200"
                             href="#"
                           >
                             {item}
@@ -93,7 +93,7 @@ const Footer = () => {
               ></iframe>
             </div>
           </div>
-          <div className="bg-main-bg-gray">
+          <div className="bg-main-light-choco dark:bg-main-gray">
             <div className="lg:flex px-5 sm:px-10 py-10 max-lg:space-y-10 items-center justify-between">
               <div className="max-md:flex-col md:flex max-md:space-y-5 md:space-x-20 max-md:items-center text-white">
                 <div className="flex items-center space-x-3 group">
@@ -101,7 +101,7 @@ const Footer = () => {
                     <BsTelephone />
                   </div>
                   <a
-                    className="block cursor-pointer group-hover:text-main-yellow transition-all duration-300 "
+                    className="block group-hover:text-main-yellow transition-all duration-300 "
                     href="tel:+98787676576577"
                   >
                     <p className="font-prata text-lg sm:text-xl md:text-2xl">
@@ -116,7 +116,7 @@ const Footer = () => {
                       <IoIosMail />
                     </div>
                     <a
-                      className="cursor-pointer group-hover:text-main-yellow transition-all duration-300 "
+                      className="group-hover:text-main-yellow transition-all duration-300 "
                       href="mailto:info@example.com"
                     >
                       <p className="font-prata text-lg sm:text-xl md:text-2xl">
@@ -131,12 +131,12 @@ const Footer = () => {
                 <form action="">
                   <div className="relative flex items-center w-full">
                     <div className="absolute left-0">
-                      <button className="text-[#777] text-xl" type="submit">
+                      <button className="text-main-light-dark-choco dark:text-[#777] text-xl" type="submit">
                         <AiOutlineSearch />
                       </button>
                     </div>
                     <input
-                      className="py-3 px-8 bg-transparent outline-none border-b border-gray-500 focus:border-b-2 focus:border-white transition-all duration-200"
+                      className="py-3 px-8 text-white bg-transparent outline-none border-b border-main-light-dark-choco dark:border-gray-500 focus:border-b-2 focus:border-white transition-all duration-200"
                       type="text"
                       placeholder="Search..."
                     />
@@ -161,8 +161,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="max-md:flex-col md:flex max-md:space-y-5 justify-between bg-main-bg-gray px-10 py-10">
-            <div className="font-bold text-[#777]">
+          <div className="max-md:flex-col md:flex max-md:space-y-5 justify-between bg-main-light-choco dark:bg-main-gray px-10 py-10">
+            <div className="font-bold text-main-light-dark-choco dark:text-[#777]">
               Copyright By@
               <a className="text-white border-b-2 border-white" href="">
                 Example

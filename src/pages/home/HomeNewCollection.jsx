@@ -20,7 +20,7 @@ const HomeNewCollection = () => {
       titleStyle: "text-white text-5xl",
       subtitleStyle: "text-white font-prata text-3xl",
       descStyle: "text-[#777] text-sm font-rubik font-medium",
-      cardBodyStyle: "bg-main-bg-dark space-y-7",
+      cardBodyStyle: "bg-main-dark space-y-7",
     },
     {
       image: NewBracelet,
@@ -30,7 +30,7 @@ const HomeNewCollection = () => {
       titleStyle: "text-white text-5xl",
       subtitleStyle: "text-white font-prata text-3xl",
       descStyle: "text-[#777] text-sm font-rubik font-medium",
-      cardBodyStyle: "bg-main-bg-dark space-y-7",
+      cardBodyStyle: "bg-main-dark space-y-7",
     },
     {
       image: NewNecklace,
@@ -40,13 +40,13 @@ const HomeNewCollection = () => {
       titleStyle: "text-white text-5xl",
       subtitleStyle: "text-white font-prata text-3xl",
       descStyle: "text-[#777] text-sm font-rubik font-medium",
-      cardBodyStyle: "bg-main-bg-dark space-y-7",
+      cardBodyStyle: "bg-main-dark space-y-7",
     },
   ];
 
   return (
     <>
-      <div className="w-full bg-main-bg-gray px-7 sm:px-20 xl:px-0 py-24">
+      <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto space-y-6">
           <div>
             <Title title="Handpicked Products" subtitle="NEW COLLECTION" />

@@ -37,10 +37,10 @@ const HomeAbout = () => {
   ];
 
   return (
-    <div className="w-full bg-main-bg-dark pt-16 pb-24 relative">
+    <div className="w-full bg-main-light dark:bg-main-dark pt-16 pb-24 relative">
       <div className="max-w-screen-lg mx-auto px-7 sm:px-20 xl:px-0">
         <div className="max-lg:flex-col lg:flex items-center justify-center max-md:space-y-7 lg:space-x-10">
-          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-7 lg:w-1/2 z-50 max-lg:max-w-screen-sm mx-auto">
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-7 lg:w-1/2 z-40 max-lg:max-w-screen-sm mx-auto">
             {homeAboutCard.map((item, index) => {
               return (
                 <HomeAboutCard
@@ -56,8 +56,8 @@ const HomeAbout = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 z-10">
-        <div className="relative before:absolute before:right-0 before:top-0 before:w-full before:h-full before:bg-cover before:bg-center before:bg-no-repeat before:bg-home-about-pattern">
+      <div className="absolute bottom-0 right-0 z-10 hidden dark:block">
+        <div className="relative dark:before:absolute dark:before:right-0 dark:before:top-0 dark:before:w-full dark:before:h-full dark:before:bg-cover dark:before:bg-center dark:before:bg-no-repeat dark:before:bg-home-about-pattern">
           <img src={HomeAboutImg} alt="" />
         </div>
       </div>

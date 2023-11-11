@@ -1,3 +1,4 @@
+import React from "react";
 import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import headerLogo from "../assets/img/logo.svg";
@@ -26,11 +27,14 @@ const Header = () => {
 
   return (
     <>
-      <div id="header" className="w-full px-3 sm:px-7 bg-white dark:bg-main-bg-dark">
+      <div
+        id="header"
+        className="w-full px-3 sm:px-7 bg-main-light dark:bg-main-dark"
+      >
         <div className="max-w-screen-2xl mx-auto">
-          <div className="flex bg-main-bg-gray justify-around lg:justify-between items-center px-3 py-3 font-prata lg:px-7">
+          <div className="flex bg-main-light-choco dark:bg-main-gray justify-around lg:justify-between items-center px-3 py-3 font-prata lg:px-7">
             <div className="flex">
-              <Link>
+              <Link to={""}>
                 <div className="flex space-x-3">
                   <img className="w-12" src={headerLogo} alt="" />
                   <div className="text-main-yellow">
@@ -62,8 +66,10 @@ const Header = () => {
                   return (
                     <li
                       key={index}
-                      className={`border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-[#8585856f] text-white ${
-                        index === 2 || index === 4 ? "block" : "hidden lg:block p-5"
+                      className={`border cursor-pointer hover:bg-main-yellow transition-all duration-300 ease-linear border-white dark:border-[#8585856f] text-white ${
+                        index === 2 || index === 4
+                          ? "block"
+                          : "hidden lg:block p-5"
                       }`}
                     >
                       {item}

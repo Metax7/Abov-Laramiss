@@ -11,7 +11,7 @@ const HomeOnSaleProducts = () => {
 
   return (
     <>
-      <div className="w-full bg-main-bg-gray px-7 sm:px-20 xl:px-0 py-24">
+      <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto space-y-5">
           <div>
             <Title title="On Sale Products" subtitle="LATEST" />

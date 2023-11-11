@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import HomeMainImg from "../assets/img/homeMainImg.jpg";
-import HomeMainImg2 from "../assets/img/homeMainImg2.webp";
+import HomeMainImg2 from "../assets/img/homeMainImg2.png";
 
 const HomeMainImage = () => {
   const settings = {

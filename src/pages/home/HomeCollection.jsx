@@ -14,7 +14,7 @@ const HomeCollection = () => {
       subtitle: "Machine Design , 24 Carat",
       desc: "$345/10gm",
       titleStyle: "text-white font-prata text-xl",
-      subtitleStyle: "text-[#bdbdbd] text-sm font-rubik",
+      subtitleStyle: "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
       descStyle: "text-main-yellow font-bold font-rubik",
     },
     {
@@ -23,7 +23,7 @@ const HomeCollection = () => {
       subtitle: "Machine Design , 24 Carat",
       desc: "$345/10gm",
       titleStyle: "text-white font-prata text-xl",
-      subtitleStyle: "text-[#bdbdbd] text-sm font-rubik",
+      subtitleStyle: "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
       descStyle: "text-main-yellow font-bold font-rubik",
     },
     {
@@ -32,7 +32,7 @@ const HomeCollection = () => {
       subtitle: "Machine Design , 24 Carat",
       desc: "$345/10gm",
       titleStyle: "text-white font-prata text-xl",
-      subtitleStyle: "text-[#bdbdbd] text-sm font-rubik",
+      subtitleStyle: "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
       descStyle: "text-main-yellow font-bold font-rubik",
     },
     {
@@ -41,14 +41,14 @@ const HomeCollection = () => {
       subtitle: "Machine Design , 24 Carat",
       desc: "$345/10gm",
       titleStyle: "text-white font-prata text-xl",
-      subtitleStyle: "text-[#bdbdbd] text-sm font-rubik",
+      subtitleStyle: "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
       descStyle: "text-main-yellow font-bold font-rubik",
     },
   ];
 
   return (
     <>
-      <div className="w-full bg-main-bg-gray py-16">
+      <div className="w-full bg-main-light-choco dark:bg-main-gray py-16">
         <div className="max-w-screen-lg mx-auto px-7">
           <div className="flex flex-col items-center justify-center space-y-10">
             <Title title="Trending Collection" subtitle="AVAIL OUR OFFER">

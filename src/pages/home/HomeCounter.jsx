@@ -33,7 +33,7 @@ const HomeCounter = () => {
 
   return (
     <>
-      <div className="w-full bg-main-bg-dark px-7 sm:px-20 xl:px-0 py-24">
+      <div className="w-full bg-main-light-choco dark:bg-main-dark px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto">
           <div
             id="counter-section"

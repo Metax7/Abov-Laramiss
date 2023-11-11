@@ -4,7 +4,7 @@ const HomeAboutText = () => {
   return (
     <div className="space-y-7 py-10">
       <span className="font-bold text-sm md:text-lg text-[#777] font-rubik">ABOUT US</span>
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-prata font-normal text-white">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-prata font-normal text-black dark:text-white">
         Crafting Jewellery Since 1990.
       </h1>
       <p className="text-sm font-rubik text-[#777]">
