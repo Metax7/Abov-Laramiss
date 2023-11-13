@@ -8,13 +8,13 @@ import { HeaderDrawer } from "../components/HeaderDrawer";
 
 const Header = () => {
   const headerMenu = [
-    "Home",
-    "Categories",
-    "Diamond",
-    "Blog",
-    "Pages",
-    "Shop",
-    "Contact",
+    { title: "Home", link: "/" },
+    { title: "Categories", link: "/" },
+    { title: "Diamond", link: "/" },
+    { title: "Blog", link: "/" },
+    { title: "Pages", link: "/" },
+    { title: "Shop", link: "/" },
+    { title: "Contact", link: "/" },
   ];
 
   const headerSocialMenu = [
@@ -53,9 +53,9 @@ const Header = () => {
                     <li key={index} className="">
                       <a
                         className="block group py-10 hover:text-main-yellow transition-all duration-300 cursor-pointer"
-                        href="#"
+                        href={item.link}
                       >
-                        {item}
+                        {item.title}
                       </a>
                     </li>
                   );
