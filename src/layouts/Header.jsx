@@ -50,11 +50,13 @@ const Header = () => {
               <ul className="lg:flex space-x-2 text-sm xl:text-md 2xl:text-lg xl:space-x-8 text-white font-bold hidden">
                 {headerMenu.map((item, index) => {
                   return (
-                    <li
-                      key={index}
-                      className="relative group py-10 hover:text-main-yellow transition-all duration-300 cursor-pointer"
-                    >
-                      {item}
+                    <li key={index} className="">
+                      <a
+                        className="block group py-10 hover:text-main-yellow transition-all duration-300 cursor-pointer"
+                        href="#"
+                      >
+                        {item}
+                      </a>
                     </li>
                   );
                 })}
