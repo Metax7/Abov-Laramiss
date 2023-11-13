@@ -5,7 +5,7 @@ const HomeBlockText = ({ title, subTitle, desc, button, descStyle }) => {
     <>
       <div className="space-y-5 ">
         <div>
-          <span className="font-bold text-main-light-dark-choco dark:text-[#777] font-rubik">
+          <span className="font-bold text-[#777] font-rubik">
             {subTitle}
           </span>
           <h2 className="font-prata text-4xl sm:text-5xl lg:text-7xl text-white mt-4">
@@ -13,7 +13,7 @@ const HomeBlockText = ({ title, subTitle, desc, button, descStyle }) => {
           </h2>
         </div>
         <p
-          className={`${descStyle} font-rubik dark:text-[#777] text-sm`}
+          className={`${descStyle} font-rubik text-[#777] text-sm`}
         >
           {desc}
         </p>
