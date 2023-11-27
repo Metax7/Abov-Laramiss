@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function HomeAboutCard({
@@ -12,7 +13,7 @@ function HomeAboutCard({
   return (
     <div className={`${isLower ? "relative sm:translate-y-8" : ""}`}>
       {showImage && (
-        <img className="w-full h-full object-cover" src={image} alt={title} />
+        <Image className="w-full h-full object-cover" src={image} alt={title} />
       )}
       {showText && (
         <div className="flex flex-col bg-main-light-choco dark:bg-main-gray items-center text-center space-y-5 px-6 py-10 h-full">
@@ -23,7 +24,9 @@ function HomeAboutCard({
           >
             <h3>{title}</h3>
           </a>
-          <p className="text-black dark:text-[#777] text-sm font-rubik">{description}</p>
+          <p className="text-black dark:text-[#777] text-sm font-rubik">
+            {description}
+          </p>
         </div>
       )}
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const SwiperButtons = ({ swiper, prevBtnStyle }) => {

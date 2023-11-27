@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import { Drawer, Button, IconButton } from "@material-tailwind/react";
 import {
@@ -9,7 +11,7 @@ import {
   AiOutlineGoogle,
 } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { BsFacebook } from "react-icons/bs";
 import { mobileDrawerList } from "./mobileDrawerList";
 
@@ -142,7 +144,7 @@ export function HeaderDrawer() {
                 <li key={itemIndex}>
                   <Link
                     className="hover:text-main-yellow hover:pl-3 transition-all duration-300"
-                    href="#"
+                    href={"#"}
                   >
                     {item.title}
                   </Link>
@@ -152,7 +154,7 @@ export function HeaderDrawer() {
                         <li key={subItemIndex}>
                           <Link
                             className="hover:text-main-yellow hover:pl-3 transition-all duration-300"
-                            href="#"
+                            href={"#"}
                           >
                             {subItem}
                           </Link>
@@ -174,7 +176,7 @@ export function HeaderDrawer() {
                   <li key={index} className="">
                     <a
                       className="block p-3 bg-main-yellow hover:bg-white hover:text-black transition-all duration-300"
-                      href="#"
+                      href={"#"}
                     >
                       {item}
                     </a>
@@ -222,7 +224,7 @@ export function HeaderDrawer() {
               >
                 <Link
                   className="hover:text-main-yellow transition-all duration-300 flex items-center justify-between"
-                  href="#"
+                  href={"#"}
                 >
                   {item.title}
                   {item.subItems.length > 0 && <IoIosArrowDown />}
@@ -240,7 +242,7 @@ export function HeaderDrawer() {
                       <Link
                         key={subItemIndex}
                         className="hover:text-white hover:bg-main-yellow block px-6 py-3 transition-all duration-300"
-                        href="#"
+                        href={"#"}
                       >
                         <li>{subItem}</li>
                       </Link>
