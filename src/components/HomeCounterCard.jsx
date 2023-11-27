@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 
 const HomeCounterCard = ({ icon, count, desc, countMK }) => {
@@ -24,7 +26,9 @@ const HomeCounterCard = ({ icon, count, desc, countMK }) => {
   return (
     <>
       <div className="flex flex-col items-center justify-center text-center space-y-3">
-        <div className="text-main-light-dark-choco dark:text-main-yellow text-5xl sm:text-6xl md:text-7xl">{icon}</div>
+        <div className="text-main-light-dark-choco dark:text-main-yellow text-5xl sm:text-6xl md:text-7xl">
+          {icon}
+        </div>
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-rubik font-bold">
           {counterInView && (
             <CountUp delay={0.4} duration={5} start={0} end={count} />
@@ -32,7 +36,9 @@ const HomeCounterCard = ({ icon, count, desc, countMK }) => {
           {countMK}
           <span className="text-sm">+</span>
         </h1>
-        <p className="text-main-light-dark-choco dark:text-[#777] font-rubik font-bold ">{desc}</p>
+        <p className="text-main-light-dark-choco dark:text-[#777] font-rubik font-bold ">
+          {desc}
+        </p>
       </div>
     </>
   );

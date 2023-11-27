@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
-import { ProductCardData } from "../data/ProductsCardData";
+import { ProductCardData } from "@/data/ProductsCardData";
 import ProductsCard from "./ProductsCard";
 
 const ProductSwiperSlider = ({ setSwiper, productStyle }) => {
@@ -35,11 +36,10 @@ const ProductSwiperSlider = ({ setSwiper, productStyle }) => {
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 20,
             },
           }}
           modules={[Navigation, Pagination, Autoplay]}
-          // onSlideChange={() => console.log("slide change")}
           onSwiper={handleSwiper}
         >
           {ProductCardData.map((item, index) => (

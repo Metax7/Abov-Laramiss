@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import { MdDarkMode } from "react-icons/md";
 import { FaSun } from "react-icons/fa";

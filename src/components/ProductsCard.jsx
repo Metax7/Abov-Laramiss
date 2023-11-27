@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineHeart, AiFillEye, AiOutlineArrowRight } from "react-icons/ai";
 import { BiRefresh } from "react-icons/bi";
 
@@ -8,7 +9,7 @@ const ProductsCard = (props) => {
       <div className="flex justify-center ml-3 lg:ml-0">
         <div className="flex flex-col group">
           <div className="relative overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-110 transition-all duration-700"
               src={props.image}
               alt=""
@@ -28,24 +29,24 @@ const ProductsCard = (props) => {
               )}
             </div>
             <div className="absolute text-lg top-[10px] right-[10px] space-y-1">
-              <a
+              <Link
                 className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
-                href="#"
+                href={"#"}
               >
                 <AiOutlineHeart />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
-                href="#"
+                href={"#"}
               >
                 <BiRefresh />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="block p-3 bg-main-gray text-main-yellow scale-0 hover:bg-main-yellow hover:text-white group-hover:scale-100 transition-all duration-500"
-                href="#"
+                href={"#"}
               >
                 <AiFillEye />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="p-7 bg-main-gray" style={props.productStyle}>
@@ -67,12 +68,12 @@ const ProductsCard = (props) => {
                   </div>
                 )}
               </span>
-              <a
+              <Link
                 className="text-main-yellow text-xl relative translate-x-3 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500"
-                href="#"
+                href={"#"}
               >
                 <AiOutlineArrowRight />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

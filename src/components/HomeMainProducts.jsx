@@ -1,5 +1,5 @@
-import React from "react";
-import { homeMainProducts } from "../data/HomeMainProducts";
+import { homeMainProducts } from "@/data/HomeMainProducts";
+import Link from "next/link";
 
 const HomeMainProducts = () => {
   return (
@@ -8,10 +8,10 @@ const HomeMainProducts = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
           {homeMainProducts.map((item, index) => {
             return (
-              <a
+              <Link
                 key={index}
                 className="group relative overflow-hidden p-5 border-2 border-main-light dark:border-[#40403b] space-y-3 hover:bg-main-light-dark-choco dark:hover:bg-main-dark hover:border-main-bg-dark transition-all duration-300"
-                href="#"
+                href={"#"}
               >
                 <div className="bg-main-yellow p-5 inline-block">
                   {item.product_icon}
@@ -25,7 +25,7 @@ const HomeMainProducts = () => {
                 <span className="absolute -right-5 -bottom-5 text-[#777] text-8xl invisible opacity-0 group-hover:visible group-hover:opacity-20 group-hover:bottom-0 group-hover:right-0 transition-all duration-300">
                   {item.product_icon}
                 </span>
-              </a>
+              </Link>
             );
           })}
         </div>

@@ -1,12 +1,13 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const HomeCollectionCard = (props) => {
   return (
     <>
-      <a href="#" className="group">
+      <Link href={"#"}>
         <div className="overflow-hidden">
-          <img
-            className="group-hover:scale-110 transition-all duration-500"
+          <Image
+            className="hover:scale-110 transition-all duration-500"
             src={props.image}
             alt=""
           />
@@ -18,7 +19,7 @@ const HomeCollectionCard = (props) => {
           <p className={`${props.subtitleStyle}`}>{props.subtitle}</p>
           <p className={`${props.descStyle}`}>{props.desc}</p>
         </div>
-      </a>
+      </Link>
     </>
   );
 };

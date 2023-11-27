@@ -1,7 +1,8 @@
-import React from "react";
+'use client'
+
 import Slider from "react-slick";
 import ProductsCard from "./ProductsCard";
-import { ProductCardData } from "../data/ProductsCardData";
+import { ProductCardData } from "@/data/ProductsCardData";
 
 const ProductsSlider = () => {
   const settings = {

@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+
 import Slider from "react-slick";
-import HomeMainImg from "../assets/img/homeMainImg.jpg";
-import HomeMainImg2 from "../assets/img/homeMainImg2.png";
+import HomeMainImg from "@/assets/img/homeMainImg.jpg";
+import HomeMainImg2 from "@/assets/img/homeMainImg2.png";
+import Image from "next/image";
 
 const HomeMainImage = () => {
   const settings = {
@@ -21,10 +23,10 @@ const HomeMainImage = () => {
       <div>
         <Slider {...settings}>
           <div>
-            <img className="w-full h-full" src={HomeMainImg} alt="" />
+            <Image className="w-full h-full" src={HomeMainImg} alt="" />
           </div>
           <div>
-            <img className="w-full h-full" src={HomeMainImg2} alt="" />
+            <Image className="w-full h-full" src={HomeMainImg2} alt="" />
           </div>
         </Slider>
       </div>

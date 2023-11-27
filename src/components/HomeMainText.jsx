@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const HomeMainText = () => {
   return (
@@ -11,20 +11,20 @@ const HomeMainText = () => {
       </h1>
       <ul className="font-semibold font-rubik sm:flex max-sm:flex-col max-lg:justify-center max-sm:space-y-12 sm:space-x-10">
         <li>
-          <a
+          <Link
             className="px-10 py-5 border-2 border-main-yellow bg-main-yellow text-white hover:bg-transparent hover:text-main-yellow transition-all duration-300"
-            href="#"
+            href={"#"}
           >
             BUY NOW
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className="px-10 py-5 border-2 border-main-gray text-[#777] hover:bg-main-yellow hover:text-white hover:shadow-[0_14px_24px_0_rgba(0,0,0,1)] dark:hover:shadow-[0_14px_24px_0_rgba(190,173,142,.4)] transition-all duration-300"
-            href="#"
+            href={"#"}
           >
             EXPLORE NOW
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
