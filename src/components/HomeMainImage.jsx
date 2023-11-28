@@ -37,7 +37,11 @@ const HomeMainImage = () => {
             imagesData.map((item, index) => {
               return (
                 <div key={index}>
-                  <Image className="w-full h-full" src={HomeMainImg} alt="" />
+                  <Image
+                    className="w-full h-full"
+                    src={item.image}
+                    alt={item.alt}
+                  />
                 </div>
               );
             })}
