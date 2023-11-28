@@ -4,8 +4,8 @@ import HomeAboutImg from "@/assets/img/about-image.jpg";
 import CardImg from "@/assets/img/home-about-card-img.jpg";
 import CardImg2 from "@/assets/img/home-about-card-img2.jpg";
 import HomeAboutCard from "./HomeAboutCard";
-import HomeAboutText from "./HomeAboutText";
 import Image from "next/image";
+import HomeBlockText from "./HomeBlockText";
 
 const HomeAbout = () => {
   const homeAboutCard = [
@@ -40,7 +40,7 @@ const HomeAbout = () => {
   return (
     <div className="w-full bg-main-light dark:bg-main-dark pt-16 pb-24 relative">
       <div className="max-w-screen-lg mx-auto px-7 sm:px-20 xl:px-0">
-        <div className="max-lg:flex-col lg:flex items-center justify-center max-md:space-y-7 lg:space-x-10">
+        <div className="max-lg:flex-col lg:flex items-center justify-center max-lg:space-y-16 lg:space-x-10">
           <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-7 lg:w-1/2 z-40 max-lg:max-w-screen-sm mx-auto">
             {homeAboutCard.map((item, index) => {
               return (
@@ -53,7 +53,13 @@ const HomeAbout = () => {
             })}
           </div>
           <div className="relative lg:w-1/2 z-40">
-            <HomeAboutText />
+            <HomeBlockText
+              title="Crafting Jewellery Since 1990."
+              subTitle="ABOUT US"
+              desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dicta illo aliquam corporis doloribus obcaecati omnis, hic ad sapiente vel voluptatum aspernatur consequuntur saepe, quisquam nisi repudiandae libero! Dicta, placeat."
+              button="KNOW MORE"
+              button2={false}
+            />
           </div>
         </div>
       </div>
