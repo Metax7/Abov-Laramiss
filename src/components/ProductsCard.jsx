@@ -63,7 +63,7 @@ const ProductsCard = (props) => {
                     </span>
                   </div>
                 ) : (
-                  <div className="text-main-yellow" href="#">
+                  <div className="text-main-yellow">
                     ${props.cost}
                   </div>
                 )}
