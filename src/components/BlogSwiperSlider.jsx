@@ -52,6 +52,7 @@ const BlogSwiperSlider = ({ setSwiper }) => {
           spaceBetween={false}
           slidesPerView={1}
           loop={true}
+          speed={1200}
           pagination={{
             clickable: true,
           }}
