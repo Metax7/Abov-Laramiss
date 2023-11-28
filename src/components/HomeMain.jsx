@@ -1,6 +1,6 @@
+import HomeBlockText from "./HomeBlockText";
 import HomeMainImage from "./HomeMainImage";
 import HomeMainProducts from "./HomeMainProducts";
-import HomeMainText from "./HomeMainText";
 
 const HomeMain = () => {
   return (
@@ -9,7 +9,13 @@ const HomeMain = () => {
         <div className="flex-col">
           <div className="flex max-lg:flex-col space-y-10 items-center justify-center">
             <div className="max-lg:w-full lg:w-1/2 max-lg:text-center">
-              <HomeMainText />
+              <HomeBlockText
+                title="High-End Jewelry Items"
+                subTitle="JEWERLY DESIGN WITH LOVE"
+                button="BUY NOW"
+                titleStyle="font-prata text-main dark:text-white text-5xl font-normal sm:text-7xl xl:text-8xl"
+                button2={true}
+              />
             </div>
             <div className="max-lg:w-full lg:w-1/2 ">
               <HomeMainImage />
