@@ -6,6 +6,17 @@ import HomeMainImg2 from "@/assets/img/homeMainImg2.png";
 import Image from "next/image";
 
 const HomeMainImage = () => {
+  const imagesData = [
+    {
+      image: HomeMainImg,
+      alt: "Image First",
+    },
+    {
+      image: HomeMainImg2,
+      alt: "Image Second",
+    },
+  ];
+
   const settings = {
     dots: false,
     fade: true,
@@ -22,12 +33,14 @@ const HomeMainImage = () => {
     <>
       <div>
         <Slider {...settings}>
-          <div>
-            <Image className="w-full h-full" src={HomeMainImg} alt="" />
-          </div>
-          <div>
-            <Image className="w-full h-full" src={HomeMainImg2} alt="" />
-          </div>
+          {imagesData &&
+            imagesData.map((item, index) => {
+              return (
+                <div key={index}>
+                  <Image className="w-full h-full" src={HomeMainImg} alt="" />
+                </div>
+              );
+            })}
         </Slider>
       </div>
     </>
