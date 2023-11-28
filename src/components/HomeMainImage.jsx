@@ -39,6 +39,7 @@ const HomeMainImage = () => {
                 <div key={index}>
                   <Image
                     className="w-full h-full"
+                    priority
                     src={item.image}
                     alt={item.alt}
                   />
