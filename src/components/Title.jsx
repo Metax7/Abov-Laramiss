@@ -2,7 +2,7 @@ import React from "react";
 import LogoSvg from "@/assets/img/logo.svg";
 import Image from "next/image";
 
-const Title = ({ title, subtitle, children }) => {
+const Title = ({ title, subtitle, children, titleStyle }) => {
   return (
     <>
       <div className="flex flex-col items-center space-y-5">
@@ -12,7 +12,9 @@ const Title = ({ title, subtitle, children }) => {
         <p className="text-main-light-dark-choco dark:text-[#777] font-bold font-rubik tracking-widest">
           {subtitle}
         </p>
-        <h1 className="text-white text-center text-3xl sm:text-5xl lg:text-7xl font-prata">
+        <h1
+          className={`${titleStyle} text-center text-3xl sm:text-5xl lg:text-7xl font-prata`}
+        >
           {title}
         </h1>
         <div>{children}</div>

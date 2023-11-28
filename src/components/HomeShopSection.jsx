@@ -21,7 +21,7 @@ const HomeShopSection = () => {
                 <span className="text-main-light-dark-choco dark:text-[#777] font-rubik font-bold">
                   SHOP
                 </span>
-                <h1 className="text-white font-prata text-4xl md:text-6xl lg:text-7xl">
+                <h1 className="text-main-gray dark:text-white font-prata text-4xl md:text-6xl lg:text-7xl">
                   Latest Products
                 </h1>
               </div>

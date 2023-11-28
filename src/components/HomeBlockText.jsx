@@ -15,7 +15,7 @@ const HomeBlockText = ({
         <div>
           <span className="font-bold text-[#777] font-rubik">{subTitle}</span>
           <h2
-            className={`${titleStyle} font-prata text-4xl sm:text-5xl lg:text-7xl text-white mt-4`}
+            className={`${titleStyle} font-prata text-4xl sm:text-5xl lg:text-7xl mt-4`}
           >
             {title}
           </h2>

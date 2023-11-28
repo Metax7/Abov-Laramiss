@@ -13,7 +13,7 @@ const HomeMain = () => {
                 title="High-End Jewelry Items"
                 subTitle="JEWERLY DESIGN WITH LOVE"
                 button="BUY NOW"
-                titleStyle="font-prata text-main dark:text-white text-5xl font-normal sm:text-7xl xl:text-8xl"
+                titleStyle="font-prata text-5xl font-normal sm:text-7xl xl:text-8xl text-main-gray dark:text-white"
                 button2={true}
               />
             </div>

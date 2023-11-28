@@ -28,6 +28,7 @@ const HomeSpecial = () => {
             <Title
               title="Special Products"
               subtitle="MAY BE YOU HAVE EARNED IT"
+              titleStyle="text-main-gray dark:text-white"
             />
           </div>
           <div className="flex max-lg:flex-col max-lg:space-y-5 lg:space-x-5">

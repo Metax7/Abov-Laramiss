@@ -55,7 +55,7 @@ const HomeCollection = () => {
       <div className="w-full bg-main-light-choco dark:bg-main-gray py-16">
         <div className="max-w-screen-lg mx-auto px-7">
           <div className="flex flex-col items-center justify-center space-y-10">
-            <Title title="Trending Collection" subtitle="AVAIL OUR OFFER">
+            <Title title="Trending Collection" subtitle="AVAIL OUR OFFER" titleStyle="text-white">
               <Link href={"#"} className="text-main-yellow flex items-center">
                 View more
                 <span className="ml-3">

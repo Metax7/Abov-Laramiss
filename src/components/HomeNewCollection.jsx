@@ -48,7 +48,7 @@ const HomeNewCollection = () => {
       <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto space-y-6">
           <div>
-            <Title title="Handpicked Products" subtitle="NEW COLLECTION" />
+            <Title title="Handpicked Products" subtitle="NEW COLLECTION" titleStyle="text-main-gray dark:text-white"/>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cardData.map((item, index) => {

@@ -11,7 +11,9 @@ const HomeVideoSection = () => {
               <HomeBlockText
                 title="Make Your Day Brighter ."
                 subTitle="DESIGN VIDEO"
+                titleStyle="text-main-gray dark:text-white"
                 desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this."
+                descStyle="text-white"
                 button="SEE MORE"
               />
             </div>

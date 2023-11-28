@@ -13,7 +13,7 @@ const HomeOnSaleProducts = () => {
       <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
         <div className="max-w-screen-lg mx-auto space-y-5">
           <div>
-            <Title title="On Sale Products" subtitle="LATEST" />
+            <Title title="On Sale Products" subtitle="LATEST" titleStyle="text-main-gray dark:text-white"/>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {ProductCardData.filter((item) => item.sale === true).map(

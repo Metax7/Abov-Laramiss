@@ -56,6 +56,7 @@ const HomeAbout = () => {
             <HomeBlockText
               title="Crafting Jewellery Since 1990."
               subTitle="ABOUT US"
+              titleStyle="text-main-gray dark:text-white"
               desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dicta illo aliquam corporis doloribus obcaecati omnis, hic ad sapiente vel voluptatum aspernatur consequuntur saepe, quisquam nisi repudiandae libero! Dicta, placeat."
               button="KNOW MORE"
               button2={false}
