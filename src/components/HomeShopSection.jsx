@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-// import SwiperButtons from "./SwiperButtons";
 import ProductSwiperSlider from "./ProductSwiperSlider";
 import SliderWithButtons from "./sliderWithButtons";
 
