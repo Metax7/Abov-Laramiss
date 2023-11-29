@@ -7,7 +7,7 @@ import {
   GiNecklaceDisplay,
 } from "react-icons/gi";
 import HomeCollectionCard from "./HomeCollectionCard";
-import Title from "./Title";
+import StandartContainer from "./StandartContainer";
 
 const HomeNewCollection = () => {
   const cardData = [
@@ -45,18 +45,18 @@ const HomeNewCollection = () => {
 
   return (
     <>
-      <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
-        <div className="max-w-screen-lg mx-auto space-y-6">
-          <div>
-            <Title title="Handpicked Products" subtitle="NEW COLLECTION" titleStyle="text-main-gray dark:text-white"/>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {cardData.map((item, index) => {
-              return <HomeCollectionCard key={index} {...item} />;
-            })}
-          </div>
+      <StandartContainer
+        title="Handpicked Products"
+        subtitle="NEW COLLECTION"
+        titleStyle="text-main-gray dark:text-white"
+        bodyStyle="bg-main-light dark:bg-main-gray"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {cardData.map((item, index) => {
+            return <HomeCollectionCard key={index} {...item} />;
+          })}
         </div>
-      </div>
+      </StandartContainer>
     </>
   );
 };

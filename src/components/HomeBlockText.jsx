@@ -20,7 +20,7 @@ const HomeBlockText = ({
             {title}
           </h2>
         </div>
-        <p className={`${descStyle} font-rubik text-[#777] text-sm`}>{desc}</p>
+        <p className={`${descStyle} font-rubik dark:text-[#777] text-sm`}>{desc}</p>
         <ul className="sm:flex max-sm:flex-col max-lg:justify-center items-center max-sm:space-y-5 sm:space-x-10">
           <li>
             <Link
