@@ -7,7 +7,7 @@ const HomeCollectionCard = (props) => {
       <Link href={"#"} className="group">
         <div className="overflow-hidden">
           <Image
-            className="group-hover:scale-110 transition-all h-[170px] duration-500"
+            className="group-hover:scale-110 transition-all h-full duration-500"
             src={props.image}
             alt=""
           />

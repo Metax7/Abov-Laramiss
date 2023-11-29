@@ -2,7 +2,7 @@ import React from "react";
 import LogoSvg from "@/assets/img/logo.svg";
 import Image from "next/image";
 
-const Title = ({ title, subtitle, children, titleStyle }) => {
+const Title = ({ title, subtitle, titleStyle }) => {
   return (
     <>
       <div className="flex flex-col items-center space-y-5">
@@ -17,7 +17,6 @@ const Title = ({ title, subtitle, children, titleStyle }) => {
         >
           {title}
         </h1>
-        <div>{children}</div>
       </div>
     </>
   );
