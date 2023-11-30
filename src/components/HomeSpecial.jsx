@@ -4,7 +4,7 @@ import StandartContainer from "./StandartContainer";
 const HomeSpecial = () => {
   const specialCardData = [
     {
-      image: "bg-special-face p-[265px]",
+      image: "bg-special-face p-[266px]",
       title: "Ariel Rings",
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },
@@ -14,7 +14,7 @@ const HomeSpecial = () => {
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },
     {
-      image: "bg-special-necklace p-32",
+      image: "bg-special-necklace p-[128px]",
       title: "Ariel Rings",
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },

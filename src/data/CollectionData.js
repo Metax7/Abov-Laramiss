@@ -11,7 +11,7 @@ export const collectionData = [
     desc: "$345/10gm",
     titleStyle: "text-white font-prata text-xl",
     subtitleStyle:
-      "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
+      "font-medium text-main-light-dark-choco dark:text-[#777] text-sm font-rubik",
     descStyle: "text-main-yellow font-bold font-rubik",
   },
   {
@@ -22,7 +22,7 @@ export const collectionData = [
     desc: "$345/10gm",
     titleStyle: "text-white font-prata text-xl",
     subtitleStyle:
-      "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
+      "font-medium text-main-light-dark-choco dark:text-[#777] text-sm font-rubik",
     descStyle: "text-main-yellow font-bold font-rubik",
   },
   {
@@ -33,7 +33,7 @@ export const collectionData = [
     desc: "$345/10gm",
     titleStyle: "text-white font-prata text-xl",
     subtitleStyle:
-      "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
+      "font-medium text-main-light-dark-choco dark:text-[#777] text-sm font-rubik",
     descStyle: "text-main-yellow font-bold font-rubik",
   },
   {
@@ -44,7 +44,7 @@ export const collectionData = [
     desc: "$345/10gm",
     titleStyle: "text-white font-prata text-xl",
     subtitleStyle:
-      "text-main-light-dark-choco font-medium dark:text-[#bdbdbd] text-sm font-rubik",
+      "font-medium text-main-light-dark-choco dark:text-[#777] text-sm font-rubik",
     descStyle: "text-main-yellow font-bold font-rubik",
   },
 ];

@@ -71,7 +71,6 @@ const BlogSwiperSlider = ({ setSwiper }) => {
             },
           }}
           modules={[Navigation, Pagination, Autoplay]}
-          onSlideChange={() => console.log("slide change")}
           onSwiper={handleSwiper}
         >
           {sliderData.map((item, index) => (
