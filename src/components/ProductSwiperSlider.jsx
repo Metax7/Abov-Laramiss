@@ -18,6 +18,7 @@ const ProductSwiperSlider = ({ setSwiper, productStyle }) => {
           spaceBetween={10}
           slidesPerView={1}
           loop={true}
+          speed={1200}
           pagination={{
             clickable: true,
           }}

@@ -1,10 +1,10 @@
 import HomeSpecialCard from "./HomeSpecialCard";
-import Title from "./Title";
+import StandartContainer from "./StandartContainer";
 
 const HomeSpecial = () => {
   const specialCardData = [
     {
-      image: "bg-special-face p-[265px]",
+      image: "bg-special-face p-[266px]",
       title: "Ariel Rings",
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },
@@ -14,7 +14,7 @@ const HomeSpecial = () => {
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },
     {
-      image: "bg-special-necklace p-32",
+      image: "bg-special-necklace p-[128px]",
       title: "Ariel Rings",
       desc: "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore magna aliqua.",
     },
@@ -22,26 +22,23 @@ const HomeSpecial = () => {
 
   return (
     <>
-      <div className="w-full bg-main-light dark:bg-main-gray px-7 sm:px-20 xl:px-0 py-24">
-        <div className="max-w-screen-lg mx-auto space-y-5">
-          <div>
-            <Title
-              title="Special Products"
-              subtitle="MAY BE YOU HAVE EARNED IT"
-            />
+      <StandartContainer
+        title="Special Products"
+        subtitle="MAY BE YOU HAVE EARNED IT"
+        titleStyle="text-main-gray dark:text-white"
+        bodyStyle="bg-main-light dark:bg-main-gray"
+      >
+        <div className="flex max-lg:flex-col max-lg:space-y-5 lg:space-x-5">
+          <div className="lg:w-1/2">
+            <HomeSpecialCard {...specialCardData[0]} />
           </div>
-          <div className="flex max-lg:flex-col max-lg:space-y-5 lg:space-x-5">
-            <div className="lg:w-1/2">
-              <HomeSpecialCard {...specialCardData[0]} />
-            </div>
-            <div className="flex flex-col space-y-5 lg:w-1/2">
-              {specialCardData.slice(1).map((item, index) => {
-                return <HomeSpecialCard key={index} {...item} />;
-              })}
-            </div>
+          <div className="flex flex-col space-y-5 lg:w-1/2">
+            {specialCardData.slice(1).map((item, index) => {
+              return <HomeSpecialCard key={index} {...item} />;
+            })}
           </div>
         </div>
-      </div>
+      </StandartContainer>
     </>
   );
 };

@@ -7,6 +7,7 @@ const HomeRareCollections = () => {
         <HomeBlockText
           title="Rare Collections."
           subTitle="BUY NOW"
+          titleStyle="text-white"
           desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat you have to understand this."
           descStyle="lg:pr-96"
           button="SHOP NOW"

@@ -36,7 +36,7 @@ const Header = () => {
             <div className="flex">
               <Link href={"/"}>
                 <div className="flex space-x-3">
-                  <Image className="w-12" src={headerLogo} alt="" />
+                  <Image className="w-12" src={headerLogo} alt="logo" />
                   <div className="text-main-yellow">
                     <h3 className="text-lg font-medium lg:text-2xl">
                       Laramiss

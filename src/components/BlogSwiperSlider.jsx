@@ -52,6 +52,7 @@ const BlogSwiperSlider = ({ setSwiper }) => {
           spaceBetween={false}
           slidesPerView={1}
           loop={true}
+          speed={1200}
           pagination={{
             clickable: true,
           }}
@@ -70,7 +71,6 @@ const BlogSwiperSlider = ({ setSwiper }) => {
             },
           }}
           modules={[Navigation, Pagination, Autoplay]}
-          onSlideChange={() => console.log("slide change")}
           onSwiper={handleSwiper}
         >
           {sliderData.map((item, index) => (

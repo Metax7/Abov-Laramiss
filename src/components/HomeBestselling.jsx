@@ -1,9 +1,15 @@
+'use client'
+
 import TextureRing from "@/assets/img/texture-ring.png";
 import Image from "next/image";
 import HomeBlockText from "./HomeBlockText";
-import ProductsSlider from "./ProductsSlider";
+import ProductSwiperSlider from "./ProductSwiperSlider";
+import { useState } from "react";
 
 const HomeBestselling = () => {
+
+  const [swiper, setSwiper] = useState(null);
+
   return (
     <div className="w-full bg-main-light dark:bg-main-dark py-32 px-7 overflow-hidden relative">
       <Image
@@ -16,12 +22,13 @@ const HomeBestselling = () => {
           <HomeBlockText
             title="Bestselling Products"
             subTitle="BUY NOW"
+            titleStyle="text-main-gray dark:text-white"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip ex ea commodo consequat you have to understand this."
             button="SHOP NOW"
-            descStyle="text-main-light-dark-choco dark:text-white"
+            descStyle="text-main-light-dark-choco"
           />
           <div className="lg:w-full">
-            <ProductsSlider />
+            <ProductSwiperSlider setSwiper={setSwiper} />
           </div>
         </div>
       </div>

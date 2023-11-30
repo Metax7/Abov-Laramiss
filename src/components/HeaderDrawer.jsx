@@ -13,7 +13,7 @@ import {
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 import { BsFacebook } from "react-icons/bs";
-import { mobileDrawerList } from "./mobileDrawerList";
+import { mobileDrawerList } from "../data/mobileDrawerList";
 
 export function HeaderDrawer() {
   const [open, setOpen] = React.useState(false);
