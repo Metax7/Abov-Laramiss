@@ -2,9 +2,15 @@ import { BsFillPlayFill } from "react-icons/bs";
 import HomeBlockText from "./HomeBlockText";
 
 const HomeVideoSection = () => {
+  const links = [
+    {
+      href:"",
+      text:"SEE MORE"
+    }
+  ]
   return (
     <>
-      <div className="w-full bg-main-light-choco dark:bg-main-dark py-24 px-7 sm:px-20 xl:px-0 relative">
+      <div className="relative w-full py-24 bg-main-light-choco dark:bg-main-dark px-7 sm:px-20 xl:px-0">
         <div className="max-w-screen-lg mx-auto">
           <div className="relative z-20 flex max-lg:flex-col-reverse">
             <div className="lg:w-1/2 max-lg:mt-10">
@@ -12,16 +18,16 @@ const HomeVideoSection = () => {
                 title="Make Your Day Brighter ."
                 subTitle="DESIGN VIDEO"
                 titleStyle="text-main-gray dark:text-white"
-                desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this."
-                descStyle="text-white"
-                button="SEE MORE"
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this."
+                descriptionStyle="text-white"
+                links={links}
               />
             </div>
             <div className="lg:w-1/2">
-              <div className="bg-video-bg bg-no-repeat bg-center h-full max-lg:py-40 flex items-center justify-center">
+              <div className="flex items-center justify-center h-full bg-center bg-no-repeat bg-video-bg max-lg:py-40">
                 <a
                   href=""
-                  className="bg-main-gray p-8 text-white rounded-full text-4xl relative popup-video"
+                  className="relative p-8 text-4xl text-white rounded-full bg-main-gray popup-video"
                 >
                   <BsFillPlayFill />
                 </a>

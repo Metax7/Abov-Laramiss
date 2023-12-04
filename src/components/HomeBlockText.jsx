@@ -3,10 +3,9 @@ import Link from "next/link";
 const HomeBlockText = ({
   title,
   subTitle,
-  desc,
-  button,
-  button2,
-  descStyle,
+  description,
+  links,
+  descriptionStyle,
   titleStyle,
 }) => {
   return (
@@ -20,28 +19,32 @@ const HomeBlockText = ({
             {title}
           </h2>
         </div>
-        <p className={`${descStyle} font-rubik dark:text-[#777] text-sm`}>{desc}</p>
-        <ul className="sm:flex max-sm:flex-col max-lg:justify-center items-center max-sm:space-y-5 sm:space-x-10">
-          <li>
-            <Link
-              className="inline-block text-white font-bold font-rubik px-12 py-4 border-2 border-main-yellow bg-main-yellow hover:bg-transparent hover:text-main-yellow transition-all duration-300"
-              href={"#"}
+        <p className={`${descriptionStyle} font-rubik dark:text-[#777] text-sm`}>{description}</p>
+        <ul className="items-center sm:flex max-sm:flex-col max-lg:justify-center max-sm:space-y-5 sm:space-x-10">
+         {
+          links && links.map((item, index) => {
+            if(index % 2 == 0){
+              return <li key={index}>
+                <Link
+              className="inline-block px-12 py-4 font-bold text-white transition-all duration-300 border-2 font-rubik border-main-yellow bg-main-yellow hover:bg-transparent hover:text-main-yellow"
+              href={item.href}
             >
-              {button}
+              {item.text}
             </Link>
-          </li>
-          <li>
-            {button2 === true ? (
+              </li>
+            }else{
+               return <li key={index}>
               <Link
                 className="px-10 py-5 border-2 inline-block font-bold font-rubik border-main-gray text-[#777] hover:bg-main-yellow hover:text-white hover:shadow-[0_14px_24px_0_rgba(0,0,0,1)] dark:hover:shadow-[0_14px_24px_0_rgba(190,173,142,.4)] transition-all duration-300"
                 href={"#"}
               >
                 EXPLORE NOW
               </Link>
-            ) : (
-              ""
-            )}
-          </li>
+           
+          </li> 
+            }
+          })
+         }
         </ul>
       </div>
     </>

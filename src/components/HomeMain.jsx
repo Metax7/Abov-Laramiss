@@ -3,18 +3,29 @@ import HomeMainImage from "./HomeMainImage";
 import HomeMainProducts from "./HomeMainProducts";
 
 const HomeMain = () => {
+
+  const links = [
+    {
+      text:"BUY NOW",
+      href:""
+    },
+    {
+      text:"EXPLORE NOW",
+      href:""
+    }
+  ]
+
   return (
     <div className="w-full py-16 px-7 sm:px-20 xl:px-0 bg-main-light dark:bg-main-dark">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex-col">
-          <div className="flex max-lg:flex-col space-y-10 items-center justify-center">
+          <div className="flex items-center justify-center space-y-10 max-lg:flex-col">
             <div className="max-lg:w-full lg:w-1/2 max-lg:text-center">
               <HomeBlockText
                 title="High-End Jewelry Items"
                 subTitle="JEWERLY DESIGN WITH LOVE"
-                button="BUY NOW"
                 titleStyle="font-prata text-5xl font-normal sm:text-7xl xl:text-8xl text-main-gray dark:text-white"
-                button2={true}
+                links={links}
               />
             </div>
             <div className="max-lg:w-full lg:w-1/2 ">
