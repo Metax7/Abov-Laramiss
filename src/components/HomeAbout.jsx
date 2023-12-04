@@ -36,12 +36,17 @@ const HomeAbout = () => {
       showImage: false,
     },
   ];
-
+ const links = [
+    {
+      text:"KNOW MORE",
+      href:""
+    }
+  ]
   return (
-    <div className="w-full bg-main-light dark:bg-main-dark pt-16 pb-24 relative">
+    <div className="relative w-full pt-16 pb-24 bg-main-light dark:bg-main-dark">
       <div className="max-w-screen-lg mx-auto px-7 sm:px-20 xl:px-0">
-        <div className="max-lg:flex-col lg:flex items-center justify-center max-lg:space-y-16 lg:space-x-10">
-          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-7 lg:w-1/2 z-40 max-lg:max-w-screen-sm mx-auto">
+        <div className="items-center justify-center max-lg:flex-col lg:flex max-lg:space-y-16 lg:space-x-10">
+          <div className="relative z-40 grid grid-cols-1 mx-auto sm:grid-cols-2 gap-7 lg:w-1/2 max-lg:max-w-screen-sm">
             {homeAboutCard.map((item, index) => {
               return (
                 <HomeAboutCard
@@ -52,14 +57,13 @@ const HomeAbout = () => {
               );
             })}
           </div>
-          <div className="relative lg:w-1/2 z-40">
+          <div className="relative z-40 lg:w-1/2">
             <HomeBlockText
               title="Crafting Jewellery Since 1990."
               subTitle="ABOUT US"
               titleStyle="text-main-gray dark:text-white"
-              desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dicta illo aliquam corporis doloribus obcaecati omnis, hic ad sapiente vel voluptatum aspernatur consequuntur saepe, quisquam nisi repudiandae libero! Dicta, placeat."
-              button="KNOW MORE"
-              button2={false}
+              description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae dicta illo aliquam corporis doloribus obcaecati omnis, hic ad sapiente vel voluptatum aspernatur consequuntur saepe, quisquam nisi repudiandae libero! Dicta, placeat."
+              links={links}
             />
           </div>
         </div>

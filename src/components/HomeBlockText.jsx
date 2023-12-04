@@ -3,9 +3,9 @@ import Link from "next/link";
 const HomeBlockText = ({
   title,
   subTitle,
-  desc,
+  description,
   links,
-  descStyle,
+  descriptionStyle,
   titleStyle,
 }) => {
   return (
@@ -19,7 +19,7 @@ const HomeBlockText = ({
             {title}
           </h2>
         </div>
-        <p className={`${descStyle} font-rubik dark:text-[#777] text-sm`}>{desc}</p>
+        <p className={`${descriptionStyle} font-rubik dark:text-[#777] text-sm`}>{description}</p>
         <ul className="items-center sm:flex max-sm:flex-col max-lg:justify-center max-sm:space-y-5 sm:space-x-10">
          {
           links && links.map((item, index) => {
@@ -34,7 +34,6 @@ const HomeBlockText = ({
               </li>
             }else{
                return <li key={index}>
-            
               <Link
                 className="px-10 py-5 border-2 inline-block font-bold font-rubik border-main-gray text-[#777] hover:bg-main-yellow hover:text-white hover:shadow-[0_14px_24px_0_rgba(0,0,0,1)] dark:hover:shadow-[0_14px_24px_0_rgba(190,173,142,.4)] transition-all duration-300"
                 href={"#"}
